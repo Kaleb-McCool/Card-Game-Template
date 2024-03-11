@@ -2,9 +2,9 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/projectSettingsUpdater.xml
-/modules.xml
 /contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
 /.idea.Card-Game-Template.iml
 # Editor-based HTTP Client requests
 /httpRequests/
