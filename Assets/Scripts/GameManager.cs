@@ -33,7 +33,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Get the current mouse position
+        Vector3 mousePosition = Input.mousePosition;
+
+        // Convert the screen coordinates to world coordinates
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        // Output the mouse position
+        Debug.Log("Mouse Position: " + mousePosition); 
     }
 
     void Deal()
