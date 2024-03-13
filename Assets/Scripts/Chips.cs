@@ -15,12 +15,14 @@ public class Chips : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OnMouseOver
+        
+    }
+    
+    void OnMouseOver()
+    {
+        if (Input.GetKey(KeyCode.Mouse1))
         {
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                bet = +1;
-            }
+            bet = +1;
         }
     }
 }

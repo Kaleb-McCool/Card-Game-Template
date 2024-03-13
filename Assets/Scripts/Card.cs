@@ -10,15 +10,12 @@ public class Card : MonoBehaviour
 
     public string card_name;
     public string description;
-    public int health;
-    public int cost;
-    public int damage;
-    public Sprite sprite;
-    public TextMeshProUGUI nameText;
+    public Sprite Image1;
+    public Sprite Image2;
+    public Sprite MEME;
     public TextMeshProUGUI descriptionText;
-    public TextMeshProUGUI healthText;
-    public TextMeshProUGUI costText;
-    public TextMeshProUGUI damageText;
+    public TextMeshProUGUI number1;
+    public TextMeshProUGUI number2;
     public Image spriteImage;
         
 
@@ -27,16 +24,13 @@ public class Card : MonoBehaviour
     {
         card_name = data.card_name;
         description = data.description;
-        health = data.health;
-        cost = data.cost;
-        damage = data.damage;
-        sprite = data.sprite;
-        nameText.text = card_name;
+        Image1 = data.Image1;
+        Image2 = data.Image2;
+        MEME = data.MEME;
         descriptionText.text = description;
-        healthText.text = health.ToString();
-        costText.text = cost.ToString();
-        damageText.text = damage.ToString();
-        spriteImage.sprite = sprite;
+        number1.text = number1.ToString();
+        number2.text = number2.ToString();
+        spriteImage.sprite = MEME;
 
     }
 
