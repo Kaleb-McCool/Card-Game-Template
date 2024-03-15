@@ -6,10 +6,11 @@ using UnityEngine;
 public class Card_data : ScriptableObject
 {
     public string card_name;
+    public Sprite Image1;
+    public Sprite Image2;
     public string description;
-    public int health;
-    public int cost;
-    public int damage;
-    public Sprite sprite;
+    public int number1;
+    public int number2;
+    public Sprite MEME;
 
 }
