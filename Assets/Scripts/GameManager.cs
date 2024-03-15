@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     void Deal()
     {
         Shuffle();
+        player_deck.Add(deck[])
        
     }
 
