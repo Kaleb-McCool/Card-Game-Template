@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int Stsh;
+    public int bt;
     public static GameManager gm;
     public List<Card> deck = new List<Card>();
     public List<Card> player_deck = new List<Card>();
@@ -40,7 +42,9 @@ public class GameManager : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         // Output the mouse position
-        Debug.Log("Mouse Position: " + mousePosition); 
+        Debug.Log("Mouse Position: " + mousePosition);
+        Stsh = Chips.Chp;
+        bt = Chips.Bet;
     }
 
     void Deal()

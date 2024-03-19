@@ -8,9 +8,11 @@ public class Chips : MonoBehaviour
 {
     public GameObject Chip;
     public int val;
-    public int bet;
-    public int chp;
+    public static int Bet;
+    public static int Chp;
     public float time;
+    public int bt;
+    public int stash;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,23 +32,25 @@ public class Chips : MonoBehaviour
         {
             val = 100;
         } 
-        bet = 0;
+        Bet = 0;
         time = 0;
-        chp = 200;
+        Chp = 200;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bt = Bet;
         time--;
+        stash = Chp;
     }
     void OnMouseOver()
     {
         if (Input.GetKey(KeyCode.Mouse0)&&time<0)
         {
-            bet += val;
+            Bet += val;
             time = 200;
-            chp -= val;
+            Chp -= val;
         }
     }
 }
