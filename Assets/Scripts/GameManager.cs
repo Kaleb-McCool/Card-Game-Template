@@ -50,8 +50,9 @@ public class GameManager : MonoBehaviour
     void Deal()
     {
         Shuffle();
-        player_deck.Add(deck[])
-       
+        player_deck.Add(deck[1]);
+        deck.Remove(deck[1]);
+
     }
 
     void Shuffle()

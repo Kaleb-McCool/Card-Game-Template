@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c025b4487bfbb41fca186c7d9d6e18a5, type: 3}
   m_Name: six
   m_EditorClassIdentifier: 
-  card_name: 
+  card_name: smurf cat
   Image1: {fileID: 0}
   Image2: {fileID: 0}
-  description: 
+  description: WE live We love We LiE
   number1: 6
   number2: 6
   MEME: {fileID: 21300000, guid: 9d94340f0f69c4f6daf99837f13d50be, type: 3}
