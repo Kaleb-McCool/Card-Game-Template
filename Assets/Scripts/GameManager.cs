@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,10 +11,9 @@ public class GameManager : MonoBehaviour
     public List<Card> deck = new List<Card>();
     public List<Card> player_deck = new List<Card>();
     public List<Card> ai_deck = new List<Card>();
-    public List<Card> player_hand = new List<Card>();
+    public List<Card> player_hand = new List<Card>(); 
     public List<Card> ai_hand = new List<Card>();
     public List<Card> discard_pile = new List<Card>();
-
     private void Awake()
     {
         if (gm != null && gm != this)
@@ -47,17 +47,27 @@ public class GameManager : MonoBehaviour
         bt = Chips.Bet;
     }
 
+    void Initial()
+    {
+        
+    }
     void Deal()
     {
-        Shuffle();
-        player_deck.Add(deck[1]);
-        deck.Remove(deck[1]);
-
+        
+        var firs = deck[0];
+        if (deck.Count > 0)
+        {
+            deck.RemoveAt(0);
+            player_hand.Add(firs);
+        }
+        //for player
+        
+        
     }
 
     void Shuffle()
     {
-
+        //3 rounds then shuffy
     }
 
     void AI_Turn()
