@@ -517,7 +517,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   ai_deck: []
   player_hand: []
   ai_hand: []
@@ -683,10 +682,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4002591297304670402}
     m_Modifications:
-    - target: {fileID: 9016892125185354829, guid: 99ef4bccd68e84d9ba6e7c8051daf70b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 296
-      objectReference: {fileID: 0}
     - target: {fileID: -734369691072555807, guid: dbe24b07922954a409fa7faac1116e79, type: 3}
       propertyPath: data
       value: 
@@ -738,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 3462529918175547602, guid: dbe24b07922954a409fa7faac1116e79, type: 3}
       propertyPath: m_Name
       value: playingCard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016892125185354829, guid: 99ef4bccd68e84d9ba6e7c8051daf70b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 296
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
