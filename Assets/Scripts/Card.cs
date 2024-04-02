@@ -13,6 +13,7 @@ public class Card : MonoBehaviour
     public Sprite Image1;
     public Sprite Image2;
     public Sprite MEME;
+    public TextMeshProUGUI Card_Name;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI number1;
     public TextMeshProUGUI number2;
