@@ -53,13 +53,25 @@ public class GameManager : MonoBehaviour
     }
     void Deal()
     {
-        
-        var firs = deck[0];
-        if (deck.Count > 0)
+
+        for (int i = deck.Count - 1; i >= 0; i--)
         {
-            deck.RemoveAt(0);
-            player_hand.Add(firs);
+            var firs = deck[0];
+                    if (deck.Count > 0)
+                    {
+                        deck.RemoveAt(0);
+                        player_deck.Add(firs);
+                        
+                    }
+                    if (deck.Count > 0)
+                    {
+                        deck.RemoveAt(0);
+                        ai_deck.Add(firs);
+                    }
+                        
         }
+                    
+        
         //for player
         
         
