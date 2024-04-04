@@ -388,7 +388,7 @@ MonoBehaviour:
   - {fileID: 938442890960474317}
   - {fileID: 938442890960474317}
   - {fileID: 938442890960474317}
-  - {fileID: 0}
+  - {fileID: 938442890960474317}
   - {fileID: 0}
   player_deck:
   - {fileID: 0}
@@ -1029,6 +1029,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 595624075714764241, guid: d689a20cb899c43f4960f9d2b29d0d71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755264033413330867, guid: d689a20cb899c43f4960f9d2b29d0d71, type: 3}
+      propertyPath: u
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

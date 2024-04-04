@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     void Shuffle()
     {
-        //3 rounds then shuffy
+         
     }
 
     void AI_Turn()

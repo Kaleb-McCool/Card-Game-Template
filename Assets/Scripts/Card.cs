@@ -27,7 +27,7 @@ public class Card : MonoBehaviour
         memeImage.sprite = data.MEME;
         number1.text = data.number1;
         number2.text = data.number1;
-        
+        u = data.isPlayer;
 
     }
 
