@@ -9,5 +9,6 @@ public class Card_data : ScriptableObject
     public string description;
     public string number1;
     public Sprite MEME;
+    public bool isPlayer = false;
 
 }
