@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c025b4487bfbb41fca186c7d9d6e18a5, type: 3}
   m_Name: five
   m_EditorClassIdentifier: 
-  Image1: {fileID: 0}
+  Image1: {fileID: 21300000, guid: 20f6b8b14e806421db59378af16567b8, type: 3}
   description: The path to the Denny's parking lot starts here
   number1: 5
   MEME: {fileID: 21300000, guid: d8ef9f7131c794044a930b80bdcec4e9, type: 3}
