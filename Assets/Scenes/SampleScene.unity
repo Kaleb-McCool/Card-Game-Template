@@ -385,9 +385,9 @@ MonoBehaviour:
   Stsh: 0
   bt: 0
   deck:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 938442890960474317}
+  - {fileID: 938442890960474317}
+  - {fileID: 938442890960474317}
   - {fileID: 0}
   - {fileID: 0}
   player_deck:
@@ -1041,6 +1041,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 595624075714764241, guid: d689a20cb899c43f4960f9d2b29d0d71, type: 3}
   m_PrefabInstance: {fileID: 836171301641467431}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &938442890960474317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5755264033413330867, guid: d689a20cb899c43f4960f9d2b29d0d71, type: 3}
+  m_PrefabInstance: {fileID: 836171301641467431}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa534983bed543169ce438dfad802a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4002591297304670402
 RectTransform:
   m_ObjectHideFlags: 0

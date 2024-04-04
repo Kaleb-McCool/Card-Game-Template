@@ -61,12 +61,13 @@ public class GameManager : MonoBehaviour
                     {
                         deck.RemoveAt(0);
                         player_deck.Add(firs);
-                        
+                        player_deck[0].data.isPlayer = true;
                     }
                     if (deck.Count > 0)
                     {
                         deck.RemoveAt(0);
                         ai_deck.Add(firs);
+                        ai_deck[0].data.isPlayer = false;
                     }
                         
         }
