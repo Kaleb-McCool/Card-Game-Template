@@ -25,8 +25,8 @@ public class Card : MonoBehaviour
         spriteImage.sprite = data.Image1;
         spriteImage2.sprite= data.Image1;
         memeImage.sprite = data.MEME;
-        number1.text = data.number1;
-        number2.text = data.number1;
+        number1.text = data.number1.ToString();
+        number2.text = data.number1.ToString();
         u = data.isPlayer;
 
     }

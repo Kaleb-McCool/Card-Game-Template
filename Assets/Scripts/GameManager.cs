@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class GameManager : MonoBehaviour
 {
@@ -56,18 +57,21 @@ public class GameManager : MonoBehaviour
 
         for (int i = deck.Count - 1; i >= 0; i--)
         {
-            var firs = deck[0];
+            int randomNumber = Random.Range(0, deck.Count);
+            var firs = deck[randomNumber];
                     if (deck.Count > 0)
                     {
-                        deck.RemoveAt(0);
+                        player_deck[randomNumber].data.isPlayer = true;
+                        deck.RemoveAt(randomNumber);
                         player_deck.Add(firs);
-                        player_deck[0].data.isPlayer = true;
+                        
                     }
                     if (deck.Count > 0)
                     {
-                        deck.RemoveAt(0);
+                        ai_deck[randomNumber].data.isPlayer = false;
+                        deck.RemoveAt(randomNumber);
                         ai_deck.Add(firs);
-                        ai_deck[0].data.isPlayer = false;
+                        
                     }
                         
         }
@@ -87,12 +91,12 @@ public class GameManager : MonoBehaviour
     {
         if (player_deck.Count <= 0)
         {
-            Shuffle();
+            player_deck.AddRange(player_hand);
         }
 
         if (ai_deck.Count <= 0)
         {
-            Shuffle();
+            ai_deck.AddRange(ai_hand);
         }
         var win1 = player_deck[0];
         var win2 = ai_deck[0];
@@ -107,7 +111,7 @@ public class GameManager : MonoBehaviour
         {
             player_deck.RemoveAt(0);
             ai_deck.RemoveAt(0);
-            ai_hand_.Add(win1);
+            ai_hand.Add(win1);
             ai_hand.Add(win2);
         }
     }

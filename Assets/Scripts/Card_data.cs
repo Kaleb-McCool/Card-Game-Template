@@ -7,7 +7,7 @@ public class Card_data : ScriptableObject
 {
     public Sprite Image1;
     public string description;
-    public string number1;
+    public int number1;
     public Sprite MEME;
     public bool isPlayer = false;
 
