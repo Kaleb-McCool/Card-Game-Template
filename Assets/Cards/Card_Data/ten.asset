@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c025b4487bfbb41fca186c7d9d6e18a5, type: 3}
   m_Name: ten
   m_EditorClassIdentifier: 
-  card_name: 
-  Image1: {fileID: 0}
-  Image2: {fileID: 0}
-  description: 
+  Image1: {fileID: 21300000, guid: 5cb1304e527f247e2a5fa7fc54ee138f, type: 3}
+  description: The path to bed starts here
   number1: 10
-  number2: 10
   MEME: {fileID: 21300000, guid: 5beacbef7c5fa4655a50361ff34260bf, type: 3}
+  isPlayer: 0

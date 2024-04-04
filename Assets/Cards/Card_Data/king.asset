@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c025b4487bfbb41fca186c7d9d6e18a5, type: 3}
   m_Name: king
   m_EditorClassIdentifier: 
-  card_name: 
-  Image1: {fileID: 0}
-  Image2: {fileID: 0}
-  description: 
+  Image1: {fileID: 21300000, guid: 8dbfe0f82476f43c1bcdaa9ea9d9f176, type: 3}
+  description: These bananas show the effects of ending racism
   number1: 10
-  number2: 10
   MEME: {fileID: 21300000, guid: 8b66388767b384d5c9010489a69f3b46, type: 3}
+  isPlayer: 0
