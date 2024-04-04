@@ -83,9 +83,33 @@ public class GameManager : MonoBehaviour
          
     }
 
-    void AI_Turn()
+    void Turn()
     {
+        if (player_deck.Count <= 0)
+        {
+            Shuffle();
+        }
 
+        if (ai_deck.Count <= 0)
+        {
+            Shuffle();
+        }
+        var win1 = player_deck[0];
+        var win2 = ai_deck[0];
+        if (player_deck[0].data.number1 < ai_deck[0].data.number1)
+        {
+            player_deck.RemoveAt(0);
+            ai_deck.RemoveAt(0);
+            player_hand.Add(win1);
+            player_hand.Add(win2);
+        }
+        if (player_deck[0].data.number1 < ai_deck[0].data.number1)
+        {
+            player_deck.RemoveAt(0);
+            ai_deck.RemoveAt(0);
+            ai_hand_.Add(win1);
+            ai_hand.Add(win2);
+        }
     }
 
 
